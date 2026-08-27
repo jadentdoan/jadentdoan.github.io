@@ -1,0 +1,40 @@
+/* Structural */
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background:url(images/webdev1.jpg);
+    background-size: cover;
+}
+
+#head {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 110, 153, 0.9);
+    margin: 5px auto;
+    padding: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 85%;
+}
+
+#content {
+    display: flex;
+    background-color: rgba(0, 221, 111, 0.9);
+    margin: 5px auto;
+    padding: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 85%;
+}
+
+/* Typography */
+
+header {
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+a { /* change the appearance of ALL links */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
