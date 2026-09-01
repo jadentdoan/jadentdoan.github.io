@@ -27,6 +27,34 @@ body {
     width: 85%;
 }
 
+.container-a {
+    margin: 5px;
+    padding: 10px;
+}
+
+.assignment {
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.container-b {
+    margin: 5px;
+    padding: 10px;
+}
+
+.project {
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+}
+
 /* Typography */
 
 header {
@@ -34,7 +62,44 @@ header {
     text-align: center;
 }
 
+.assignment {
+    text-align: center;
+}
+
+.project {
+    text-align: center;
+}
+
 a { /* change the appearance of ALL links */
     text-decoration: none;
     color: rgb(0, 0, 0);
+}
+
+#content p, #content h2 {
+    text-align: center;
+
+}
+
+/* Responsive Design */
+
+@media (min-width: 900px) {
+    #content, .container-a, .container-b {
+        display: flex;
+    }
+
+    .assignment {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .container-b {
+        justify-content: center;
+    }
+
+    .project {
+        flex: 0 0 calc((100% - 60px) / 3);
+        margin: 10px;
+        text-align: center;
+    }
+
 }

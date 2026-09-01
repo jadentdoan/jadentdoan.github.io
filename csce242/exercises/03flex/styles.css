@@ -10,9 +10,52 @@ body {
     margin: auto;
 }
 
+/* Header */
+
 #main-header {
     background-color: blanchedalmond;
+    position: relative; /* Will make every child element with position: absolute; be positioned relative to this element */
+    padding: 3%;
 }
+
+#logo {
+    position: absolute; /* "Positioning the logo; 'absolute' won't reserve space on screen, but 'relative' will" */
+    top: 1em;
+    left: 1em;
+}
+
+/* Hero */
+
+#hero {
+    position: relative;
+}
+
+#hero-description {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.hero-arrow {
+    position: absolute;
+    top: 25%;
+    font-size: 12em;
+    color: white;
+    text-decoration: none;
+}
+
+#hero-arrow-right {
+    right: 10px;
+}
+
+#hero-arrow-left {
+    left: 10px;
+}
+
+/* Sidebar */
 
 #sidebar, #info {
     padding: 5px;
@@ -28,7 +71,7 @@ body {
 
 /* Navigation */
 
-#main-nav ul, #quick-links {
+#main-nav ul, #quick-links, #login-nav ul {
     list-style-type: none;
     padding-left: 0;
 }
@@ -42,6 +85,29 @@ body {
 #main-nav a {
     color: white;
     text-decoration: none; /* Removes the underline */
+}
+
+/* Login Nav */
+
+#login-nav {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+#login-nav a {
+    color:crimson;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#login-nav li {
+    display: inline-block;
+}
+
+#login-nav li:not(:last-child):not(:first-child)::after {
+    content: "|";
+    color: crimson;
 }
 
 /* Images */
