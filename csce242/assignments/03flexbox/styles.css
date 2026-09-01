@@ -1,0 +1,100 @@
+/* Structure */
+
+body {
+    background-color:rgb(23, 23, 23);
+}
+
+.main-content {
+    background-color: azure;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 5px solid rgb(169, 169, 0);
+}
+
+.four {
+    border: 3px solid rgb(23, 23, 23);
+    padding: 10px;
+    margin: 5px;
+}
+
+.mainrow {
+    border: 3px solid rgb(23, 23, 23);
+    padding: 15px;
+    margin: 5px;
+}
+
+.mrtext {
+    margin: 10px;
+}
+
+#mainfoot {
+    background-color: azure;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    border: 5px solid rgb(169, 169, 0);
+}
+
+/* Navigation */
+
+#navbar li, #sidenav li{
+    padding: 5px;
+}
+
+#navbar ul, #sidenav ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#navbar a {
+    color: azure;
+    text-decoration: none;
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+}
+
+/* Typography */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#header-main {
+    text-align: center;
+}
+
+h1 {
+    color: azure;
+}
+
+.four, h2 {
+    text-align: center;
+}
+
+#mainfoot p {
+    text-align: center;
+}
+
+/* Responsive Design */
+
+@media (min-width: 900px) {
+    #navbar ul, .container1, .mainrow {
+        display: flex;
+    }
+
+    #navbar li, .four, .mrtext {
+        flex: 1;
+    }
+
+    .container2 {
+        display: block;
+    }
+
+}
+
+
