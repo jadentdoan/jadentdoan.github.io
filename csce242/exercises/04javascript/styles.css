@@ -139,6 +139,33 @@ h1, h2, h3 {
     display:flex;
 }
 
+/* Styles for JS */
+.cool-link {
+    background: red;
+    color: white;
+}
+
+#ball {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.bouncing-ball {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0% {bottom:75%; background: blue;}
+    10% {background:orange;}
+    50% {background:yellow;bottom: 0%}
+    75% {background:green;}
+}
+
 /* Responsive Design */
 
 /* 600 px or larger */
