@@ -14,6 +14,7 @@
     --light-text: #FAF1E8;
     --footer-copy-bg: #C2B7AB;
     --accent-text:#A64F6C;
+    --donation:0%;
 }
 
 body {
@@ -82,6 +83,18 @@ body {
     color:var(--highlight-bg);
 }
 
+#toggle-nav {
+    position:absolute;
+    top:15px;
+    right:15px;
+}
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:var(--headings);
+    margin:6px 0;
+}
+
 /* Page Title */
 #page-title {
     color: var(--headings);
@@ -116,6 +129,18 @@ body {
 .project-card p {
     margin: 0;
     padding: 18px;
+}
+
+.special {
+    background-color: skyblue;
+    padding: 5px;
+    margin: 5px;
+    border: 1px black;
+}
+
+.error {
+    color:red;
+    font-style: italic;
 }
 
 /* images */
@@ -166,10 +191,35 @@ h1, h2, h3 {
     75% {background:green;}
 }
 
+/* Thermometer */
+#thermometer {
+    width:25%;
+    height:200px;
+    margin-right:10%;
+    border:2px solid turquoise;
+    background:linear-gradient(0deg, red 0% var(--donation), white var(--donation) 100%);
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Hidden */
+
+.hidden {
+    display:none;
+}
+
+.hide-small {
+    display: none;
+}
+
 /* Responsive Design */
 
 /* 600 px or larger */
 @media (min-width: 1000px) {
+    .hide-small {
+        display: flex;
+    }
+
     /* Structure */
     #content {
         width:80%;
@@ -194,6 +244,10 @@ h1, h2, h3 {
     #main-nav li {
         flex:1;
         border:0;
+    }
+
+    #toggle-nav {
+        display:none;
     }
 
     /* Columns */
