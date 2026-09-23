@@ -1,0 +1,108 @@
+/* Structure */
+
+body {
+    background: rgb(129, 22, 22);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(54, 95, 105);
+}
+
+#content {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgb(241, 242, 233);
+    border: 1px solid rgb(99, 142, 152);
+    border-radius: 5px;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border: 1px solid rgb(165, 190, 194);
+    border-radius: 5px;
+    padding: 25px 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 200px;
+    max-width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid rgb(99, 142, 152);
+    border-radius: 5px;
+    font: inherit;
+}
+
+.hide {
+    display: none;
+}
+
+/* Navigation */
+
+nav button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-items {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 5;
+}
+
+#menu-items li {
+    display: inline;
+}
+
+#menu-items li:not(:last-child)::after {
+    content: " | ";
+}
+
+/* Typography */
+
+h1 {
+    margin-top: 0;
+}
+
+h2 {
+    color: rgb(20, 148, 199);
+}
+
+h3 {
+    margin-top: 0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+    nav {
+        text-align: left;
+    }
+
+    #menu-toggle, #menu-items.open, #menu-items li {
+        display: block;
+    }
+
+    #menu-items {
+        display: none;
+    }
+
+    #menu-items li:not(:last-child)::after {
+        content: none;
+    }
+}
