@@ -38,11 +38,6 @@ body {
     margin: 10px;
 }
 
-.container-b {
-    margin: 5px;
-    padding: 10px;
-}
-
 .project {
     border: 3px solid rgb(0, 0, 0);
     border-radius: 5px;
@@ -95,10 +90,6 @@ a { /* change the appearance of ALL links */
 
     .container-a {
         flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .container-b {
         justify-content: center;
     }
 
