@@ -1,0 +1,413 @@
+/* Structure */
+:root {
+    --background: #0d181e;
+    --headings: #E3CE9B;
+    --gold: #CEB47A;
+    --light-text: #F3F0E9;
+    --muted-details: #B4BBB9;
+    --cards-bg: #F3F0E9;
+    --dark-text: #0D181E;
+    --border: #655B43;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: var(--background);
+    color: var(--light-text);
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1320px;
+    margin: auto;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-weight: normal;
+    margin-top: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.eyebrow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gold);
+    margin: 0 0 18px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header */
+.announcement {
+    background-color: var(--gold);
+    color: var(--dark-text);
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.announcement span {
+    margin: 0 12px;
+}
+
+#main-header {
+    padding: 24px 0;
+    text-align: center;
+}
+
+/* Logo Design */
+
+.logo {
+    color: var(--gold);
+    font-size: 32px;
+}
+
+.logo i {
+    font-size: 20px;
+}
+
+/* Navigation */
+#main-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 18px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+#main-nav li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#main-nav a:hover {
+    color: var(--gold);
+}
+
+/* Buttons */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 16px 22px;
+    background-color: var(--gold);
+    color: var(--dark-text);
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--headings);
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    background-image: linear-gradient(90deg, rgba(0,0,0,.8), rgba(0,0,0,.15));
+    background-size: cover;
+    background-position: 62% center;
+    padding: 65px 0;
+}
+
+.hero h1 {
+    color: var(--headings);
+    font-size: 54px;
+    line-height: 1;
+    margin-bottom: 22px;
+}
+
+.hero-description {
+    color: var(--headings);
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.hero-caption {
+    display: block;
+    color: var(--gold);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: right;
+    margin: 40px 5% 0;
+}
+
+/* Live Shows */
+.livestream {
+    border-bottom: 1px solid var(--border);
+    padding: 30px 0;
+}
+
+.live-inner h2 {
+    font-size: 26px;
+    margin-bottom: 16px;
+}
+
+.show-time span {
+    display: block;
+    color: var(--muted-details);
+    font-size: 13px;
+}
+
+.show-benefits {
+    font-size: 16px;
+}
+
+/* Vault */
+.vault {
+    background-color: var(--cards-bg);
+    color: var(--dark-text);
+    padding: 45px 0;
+}
+
+.collection-text .eyebrow {
+    color: #786033;
+}
+
+.collection-text h2 {
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.text-link {
+    display: inline-block;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 12px;
+    margin-bottom: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+ .collection-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 28px;
+ }
+
+ .collection-card img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 4px;
+ }
+
+/* About */
+.about {
+    padding: 40px 0;
+}
+
+.about-text h2 {
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+
+.about-text > p {
+    font-size: 22px;
+}
+
+.about-text .eyebrow {
+    font-size: 10px;
+}
+
+.about-box {
+    border: 1px solid var(--gold);
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.about-box > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+}
+
+.about-box > div:last-child {
+    border-bottom: 0;
+}
+
+.icon {
+    width: 35px;
+    color: var(--gold);
+    font-size: 34px;
+    text-align: center;
+}
+
+.about-box p {
+    color: var(--headings);
+    font-size: 21px;
+    margin: 0;
+}
+
+.about-box p span {
+    display: block;
+    color: var(--light-text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/* Footer */
+footer {
+    background-color: #0B151A;
+    border-top: 1px solid var(--border);
+}
+
+.footer-main {
+    padding: 35px 0;
+}
+
+.footer-main > div {
+    margin-bottom: 28px;
+}
+
+.footer-main h2 {
+    color: var(--gold);
+    font-size: 18px;
+}
+
+.footer-main a:not(.logo) {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.footer-main p {
+    color: var(--muted-details);
+    font-size: 13px;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--border);
+    padding: 20px 0;
+    font-size: 12px;
+}
+
+.footer-bottom span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+/* 900 px or larger */
+@media (min-width: 900px) {
+    /* Columns */
+    .columns, .header-inner, .live-inner, .collections-inner,
+    .about, .footer-main, .footer-bottom {
+        display: flex;
+        gap: 35px;
+    }
+
+    .header-inner, .live-inner, .collections-inner,
+    .about {
+        align-items: center;
+    }
+
+    /* Header */
+    .header-inner {
+        justify-content: space-between;
+    }
+
+    #main-nav ul {
+        margin: 0;
+        gap: 30px;
+    }
+
+    /* Hero */
+    .hero {
+        background-position: center;
+        padding: 65px 0 25px;
+    }
+
+    .hero-inner {
+        padding-left: 10%;
+    }
+
+    .hero h1 {
+        font-size: 88px;
+    }
+
+    .hero-description {
+        font-size: 26px;
+    }
+
+    /* Live Shows */
+    .live-inner > div, .show-time, .show-benefits {
+        flex: 1;
+    }
+
+    .show-time {
+        border-left: 1px solid var(--border);
+        padding-left: 25px;
+    }
+
+    /* Vault */
+    .collection-text {
+        flex: 1;
+        border-right: 1px solid #C7BFAE;
+        padding-right: 25px;
+    }
+
+    .collection-grid {
+        flex: 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+    }
+
+    .collection-card {
+        margin-bottom: 0;
+    }
+
+    /* About */
+    .about-text {
+        flex: 1;
+    }
+
+    .about-box {
+        flex: 1;
+        margin-top: 0;
+    }
+
+    /* Footer */
+    .footer-bottom {
+        justify-content: space-between;
+    }
+
+    .footer-main > div {
+        flex: 1;
+    }
+
+    .footer-main > div:first-child {
+        flex: 2;
+    }
+}

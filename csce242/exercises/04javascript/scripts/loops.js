@@ -1,4 +1,4 @@
-//first loop ex
+//first loop example
 document.getElementById("btn-loop").onclick = (e) => {
     const loopResult = document.getElementById("loop-result");
 
@@ -9,44 +9,41 @@ document.getElementById("btn-loop").onclick = (e) => {
         p.classList.add("special");
         p.onclick = () => {
             console.log(`You clicked the ${i}'th element`);
-        }
-
-        /*You can put replace those inside lines with this
-        loopResult.innerHTML += `<p>$(i+1)</p>
-        */
+        };
     }
+/*
+     for(let i = 0; i < 10; i++){
+        loopResult.innerHTML += `<p>${i+1}</p>`;
+    }*/
 };
 
 //looping through a range
-document.getElementById("btn-range").onclick = () => {
-    const startText = document.getElementById("txt-start").value;
-    const endText = document.getElementById("txt-end").value;
+document.getElementById("btn-loop-range").onclick = () => {
+    const startNum = parseInt(document.getElementById("txt-start").value);
+    const endNum = parseInt(document.getElementById("txt-end").value);
     const errorStart = document.getElementById("error-start");
     errorStart.classList.add("hidden");
     const errorEnd = document.getElementById("error-end");
     errorEnd.classList.add("hidden");
     const ul = document.getElementById("range-list");
 
-    if(isNaN(startText) || startText < 0 || startText > 5){
+    if(startNum < 0 || startNum > 5){
         errorStart.innerHTML = "* Invalid";
         errorStart.classList.remove("hidden");
         return;
     }
 
-    if(isNaN(endText) || endText < 0 || endText > 5 || endText < startText){
+    if(endNum < 10 || endNum > 20 || endNum < startNum){
         errorEnd.innerHTML = "* Invalid";
         errorEnd.classList.remove("hidden");
         return;
     }
 
-    for(let i = parseInt(startText); i < parseInt(endText); i++){
+    ul.innerHTML = "";
+
+    for(let i = startNum; i < endNum; i++){
         const li = document.createElement("li");
         li.innerHTML = i;
         ul.appendChild(li);
     }
 };
-
-//first array
-document.getElementById("btn-show-toys").onclick = () => {
-    
-}
