@@ -47,3 +47,58 @@ document.getElementById("btn-loop-range").onclick = () => {
         ul.appendChild(li);
     }
 };
+
+//first array example
+document.getElementById("btn-show-toys").onclick = () => {
+    const toys = ["doll", "skate board", "mini car", "board game", "braclets"];
+    const toyList = document.getElementById("toy-list");
+    toyList.innerHTML = "";
+
+    /*
+    for(let i = 0; i < toys.length; i++){
+        const p = document.createElement("p");
+        p.innerHTML = toys[i];
+        toyList.append(p);
+    }*/
+
+    toys.forEach((toy)=>{
+        const p = document.createElement("p").innerHTML;
+        p.innerHTML = toy;
+        toysList.append(p);
+    });
+};
+
+//show a table of toys and prices
+document.getElementById("btn-show-toy-prices").onclick = () => {
+    const div = document.getElementById("toy-info");
+    div.innerHTML = "";
+    
+    const toyMap = [];
+    toyMap["doll"]= 129.99;
+    toyMap["skate board"] = 200.00;
+    toyMap["mini car"] = 1.99;
+    toyMap["board game"] = 20.99;
+    toyMap["braclettes"] = 19.24;
+
+    const table = document.createElement("table");
+    div.append(table);
+    table.append(createTR("Name", "Price", "th"));
+
+    for(let toy in toyMap) {
+        table.append(createTR(toy, "$" + toyMap[toy], "td")); 
+    }
+};
+
+const createElement = (data, type) => {
+    console.log(type);
+    const elem = document.createElement(type);
+    elem.innerHTML = data;
+    return elem;
+};
+
+const createTR = (data1, data2, type) => {
+    const tr = document.createElement("tr");
+    tr.append(createElement(data1, type));
+    tr.append(createElement(data2, type));
+    return tr;
+}

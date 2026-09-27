@@ -1,0 +1,105 @@
+/* Structure */
+:root {
+    --background:#00a0df;
+    --headings:#393D3B;
+    --accent-text:#617200;
+    --grass:#7DC64B;
+    --road:#393939;
+    --road-edge:#E5E5E5;
+    --road-lines:#F9D94A;
+    --windows:#9FD9FA;
+    --wheels:#595959;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:var(--background);
+    padding:0px;
+    margin:0px;
+}
+
+/* Header */
+header {
+    text-align:center;
+    padding:25px 10px;
+}
+
+h1 {
+    color:var(--headings);
+}
+
+h2 {
+    color:var(--accent-text);
+}
+
+/* Road */
+/* Original CSS art made with rectangles, rounded corners, and a gradient. */
+.road-section {
+    background-color:var(--grass);
+    margin:0 20px 30px;
+    padding:55px 0 75px;
+}
+
+#road {
+    background-color:var(--road);
+    border-top:3px solid var(--road-edge);
+    border-bottom:3px solid var(--road-edge);
+    position:relative;
+}
+
+#road::before {
+    content:"";
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:100%;
+    height:5px;
+    background:repeating-linear-gradient(to right, var(--road-lines) 0px 40px, transparent 40px 70px);
+}
+
+.lane {
+    position:relative;
+    width:calc(100% - 70px);
+    height:54px;
+}
+
+/* Cars */
+.car {
+    position:absolute;
+    top:14px;
+    transform-origin:top left;
+    width:70px;
+    height:32px;
+    border-radius:9px 9px 4px 4px;
+}
+
+.car::before {
+    content:"";
+    position:absolute;
+    top:-9px;
+    left:17px;
+    width:36px;
+    height:16px;
+    background-color:var(--windows);
+    border-radius:10px 10px 3px 3px;
+}
+
+.car::after {
+    content:"";
+    position:absolute;
+    bottom:-6px;
+    left:8px;
+    width:13px;
+    height:13px;
+    background-color:var(--wheels);
+    border-radius:50%;
+    box-shadow:42px 0 var(--wheels);
+}
+
+/* Responsive Design */
+@media (min-width: 900px) {
+    main {
+        width:95%;
+        margin:auto;
+    }
+}
