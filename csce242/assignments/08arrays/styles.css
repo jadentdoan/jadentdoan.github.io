@@ -1,0 +1,78 @@
+:root {
+    --page-background: rgb(48, 162, 238);
+    --text-color: rgb(5, 57, 70);
+    --content-background: rgb(241, 242, 233);
+    --border-color: rgb(99, 142, 152);
+    --accent-color:  rgb(61, 61, 61);
+}
+
+/* Structure */
+body {
+    background: var(--page-background);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--text-color);
+    text-align: center;
+}
+
+#content {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background: var(--content-background);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+select {
+    padding: 5px;
+    color: inherit;
+    font: inherit;
+    border: 1px solid var(--border-color);
+}
+
+#destinations {
+    list-style: none;
+    padding: 0;
+}
+
+#destinations li {
+    margin: 15px 0;
+}
+
+#destination-map {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+.hide {
+    display: none;
+}
+
+/* Typography */
+h1 {
+    margin-top: 0;
+}
+
+h2, footer {
+    color: var(--accent-color);
+}
+
+a {
+    color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #destination-map {
+        height: 300px;
+    }
+}
