@@ -1,0 +1,221 @@
+/* Variables */
+:root {
+    --background-color: #faf3e8;
+    --text-color: #334b49;
+    --heading-color: #245c56;
+    --subheading-color: #005a00;
+    --card-color: #28665f;
+    --card-hover-color: #1d4d47;
+    --focus-color: #f3c775;
+    --overlay-color: rgba(20, 39, 36, 0.55);
+    --popup-color: #e3eee7;
+    --popup-text-color: #234b44;
+    --close-hover-color: #c8ddd1;
+    --map-background-color: #f1ede3;
+    --card-text-color: #ffffff;
+}
+
+/* Structure */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+#page-content {
+    width: 92%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    padding: 28px 0 22px;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+header h1 {
+    margin: 0 0 6px;
+    color: var(--heading-color);
+    font-size: 32px;
+}
+
+header h2 {
+    margin: 0;
+    color: var(--subheading-color);
+    font-size: 23px;
+}
+
+header p {
+    margin: 12px 0 0;
+    font-size: 14px;
+}
+
+/* Vacation cards */
+#vacation-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vacation-card {
+    width: 23%;
+    margin: 1%;
+    overflow: hidden;
+    border-radius: 7px;
+    background: var(--card-color);
+}
+
+.vacation-card button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--card-text-color);
+    font: inherit;
+    cursor: pointer;
+}
+
+.card-heading {
+    height: 75px;
+    padding: 12px 5px;
+}
+
+.card-heading h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.card-heading p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.vacation-card img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.vacation-card:hover {
+    background: var(--card-hover-color);
+}
+
+.vacation-card button:focus-visible {
+    outline: 4px solid var(--focus-color);
+    outline-offset: -4px;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    text-align: center;
+    color: var(--heading-color);
+    font-size: 12px;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+footer a {
+    color: inherit;
+}
+
+.photo-note {
+    font-size: 11px;
+}
+
+/* Popup background */
+#vacation-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow: auto;
+    padding: 12vh 20px 30px;
+    background: var(--overlay-color);
+}
+
+.hide {
+    display: none;
+}
+
+/* Popup content */
+#modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 760px;
+    margin: auto;
+    padding: 22px;
+    background: var(--popup-color);
+    border-radius: 6px;
+    color: var(--popup-text-color);
+}
+
+#close-modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 4px 12px;
+    border: none;
+    background: transparent;
+    color: var(--popup-text-color);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#close-modal:hover {
+    background: var(--close-hover-color);
+}
+
+.modal-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+#vacation-map {
+    width: 48%;
+    height: 330px;
+    border: none;
+    background: var(--map-background-color);
+}
+
+.modal-details {
+    width: 48%;
+    padding-right: 14px;
+}
+
+.modal-details h2 {
+    margin: 0 0 16px;
+    font-size: 25px;
+}
+
+.modal-details p {
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+/* Smaller screens */
+@media (max-width: 900px) {
+    .vacation-card {
+        width: 48%;
+    }
+}
+

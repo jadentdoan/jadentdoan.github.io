@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vacations | JS Classes</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="page-content">
+            <header>
+                <h1>Vacations</h1>
+                <h2>Vacation Experiences</h2>
+                <p>Pick a destination to discover more.</p>
+            </header>
+            <main>
+                <div id="vacation-gallery"></div>
+            </main>
+            <footer>
+                <p>&copy; jadentdoan</p>
+            </footer>
+        </div>
+
+        <!-- Vacation popup -->
+        <div id="vacation-modal" class="hide" role="dialog">
+            <div id="modal-content">
+                <button id="close-modal" type="button">&times;</button>
+                <div class="modal-layout">
+                    <iframe id="vacation-map" title="Vacation destination map"></iframe>
+                    <section class="modal-details">
+                        <h2 id="modal-title"></h2>
+                        <p><strong>Type:</strong> <span id="modal-type"></span></p>
+                        <p><strong>Description:</strong> <span id="modal-description"></span></p>
+                        <p><strong>Things To Do:</strong> <span id="modal-activities"></span></p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
