@@ -1,0 +1,92 @@
+[
+    {
+        "_id": 1,
+        "title": "Tyler Shough",
+        "img": "images/saints-first.png",
+        "collection": "Saints Collection",
+        "sport": "Football",
+        "details": "Rookie patch autograph",
+        "group": "saints",
+        "preview": "saints-preview.html"
+    },
+    {
+        "_id": 2,
+        "title": "Drew Brees",
+        "img": "images/saints-second.png",
+        "collection": "Saints Collection",
+        "sport": "Football",
+        "details": "Autograph",
+        "group": "saints",
+        "preview": ""
+    },
+    {
+        "_id": 3,
+        "title": "Chris Olave",
+        "img": "images/saints-third.png",
+        "collection": "Saints Collection",
+        "sport": "Football",
+        "details": "Select",
+        "group": "saints",
+        "preview": ""
+    },
+    {
+        "_id": 4,
+        "title": "Ja'Marr Chase",
+        "img": "images/college-first.png",
+        "collection": "Collegiate Collection",
+        "sport": "Football",
+        "details": "Immaculate rookie autograph",
+        "group": "collegiate",
+        "preview": "collegiate-preview.html"
+    },
+    {
+        "_id": 5,
+        "title": "LaNorris Sellers",
+        "img": "images/college-second.png",
+        "collection": "Collegiate Collection",
+        "sport": "Football",
+        "details": "Autograph",
+        "group": "collegiate",
+        "preview": ""
+    },
+    {
+        "_id": 6,
+        "title": "LSU Team Trio",
+        "img": "images/college-third.png",
+        "collection": "Collegiate Collection",
+        "sport": "Football",
+        "details": "National Treasures team materials",
+        "group": "collegiate",
+        "preview": ""
+    },
+    {
+        "_id": 7,
+        "title": "Johnny Juzang",
+        "img": "images/gold-first.png",
+        "collection": "Other Gold",
+        "sport": "Basketball",
+        "details": "Bowman U autograph",
+        "group": "gold",
+        "preview": "gold-preview.html"
+    },
+    {
+        "_id": 8,
+        "title": "Munetaka Murakami",
+        "img": "images/gold-second.png",
+        "collection": "Other Gold",
+        "sport": "Baseball",
+        "details": "Stadium Sluggers",
+        "group": "gold",
+        "preview": ""
+    },
+    {
+        "_id": 9,
+        "title": "Ilia Topuria",
+        "img": "images/gold-third.png",
+        "collection": "Other Gold",
+        "sport": "UFC",
+        "details": "Optic rated rookie",
+        "group": "gold",
+        "preview": ""
+    }
+]
